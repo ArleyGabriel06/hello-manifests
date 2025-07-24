@@ -3,9 +3,10 @@ kind: Service
 metadata:
   name: hello-fastapi-service
 spec:
-  type: ClusterIP
+  type: NodePort  # Mude para NodePort
   selector:
     app: hello-fastapi
   ports:
-  - port: 80
-    targetPort: 8081
+  - port: 80          # Porta do serviço dentro do cluster
+    targetPort: 8081    # Porta do seu container FastAPI
+    nodePort: 30081   # Porta que você acessará no navegador
