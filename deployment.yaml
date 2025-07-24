@@ -16,4 +16,4 @@ spec:
         - name: hello-fastapi
           image: tags: gabriel6garcia/hello-fastapi$:latest
           ports:
-            - containerPort: 80
+            - containerPort: 8081
