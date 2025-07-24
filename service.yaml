@@ -1,12 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hello-fastapi
+  name: hello-fastapi-service
 spec:
-  type: NodePort
+  type: ClusterIP
   selector:
     app: hello-fastapi
   ports:
-    - port: 80
-      targetPort: 80
-      nodePort: 30080
+  - port: 80
+    targetPort: 8081
