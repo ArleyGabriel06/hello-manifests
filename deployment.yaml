@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: hello-fastapi
-        image: gabriel6garcia/hello-fastapi:8cdd5d56cc08b6b63a764f4d4028b22319231a83
+        image: gabriel6garcia/hello-fastapi:bea607b7a649e80dd225ec5c390fe059c828ebc4
         ports:
           - containerPort: 8081
